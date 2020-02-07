@@ -1,7 +1,22 @@
 body{
-    Font-family: "Roboto", sans-serif;
+    font-family: Roboto, sans-serif;
 }
-.alert-container{}
+.container-wrapper{}
+.container-wrapper--red{
+    background-color:  #da2d07fa;
+    color:white;
+}
+.alert-container .col-12{
+    padding-left: 0;
+    padding-right: 0;
+}
+.site-wide-alert{
+    border-radius:0;
+    margin-bottom:0;
+    padding:5px 15px;
+    background-color: #eef116;
+    border-color: #eef116;
+}
 
 .callout-container{
     height: 100vh;
@@ -24,12 +39,29 @@ body{
     background-color: rgba(0,0,0,0.5);    
 }
 .quotes-container{}
+
 .features-container{}
+
+/* Page headers */
+
+.page-header {
+    margin-bottom:0;
+    border-bottom:0;
+    text-align: center;
+}
+.page-header h2{
+    margin-top:0;
+}
+.quotes .page-header{
+    margin-bottom: 25px;
+    
+}
 /* Block dividers*/
 .block-divider{
-    height: 10px;
+    height: 5px;
     width: inherit;
     border: 1px;
+    background-color: #444;
     
 }
 .block-divider--orange{
@@ -38,7 +70,39 @@ body{
 .block-divider--short{
     width: 50%;
 }
+.block-divider--white{
+    background-color:white;
+}
+/* Content containers */
+.content-container {
+    padding-top:75px;
+    padding-bottom:75px;
+}
+/* Navbar*/
 
+.navalert-container{
+    position:absolute;
+    top:0;
+    left:0;
+    padding-left:0;
+    padding-right:0;
+    z-index:1;
+}
+.navbar{
+    margin-bottom:0;
+    border:0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.25)
+}
+.navbar .navbar-toggler{
+    border: 0;
+}
+.navbar-dark .navbar-brand {
+    font-weight: bold;
+}
+.navbar .navbar-nav a {
+    font-weight:bold;
+}
 /*jumbotron*/
 .jumbotron{
     background-color: transparent;
@@ -50,7 +114,7 @@ body{
 }
 .jumbotron .lead{
     margin: 25px 0;
-    color: #350d0d;
+    color: #bbbbbb;
 }
 .jumbotron small{
     font-size:60%;
@@ -66,7 +130,7 @@ body{
 }
 .btn--red{
     color: white;
-    background-color: #da2d07fa;;
+    background-color: #da2d07fa;
     border-color: #d44b32;
 }
 
@@ -80,8 +144,23 @@ body{
 
 
 
+.feature{
+    text-align: center;
+    margin-bottom:40px;
+}
 
-
-
-
+.features i{
+    margin-bottom:20px;
+    font-size:45px;
+    line-height:45px;
+}
+.feature .btn{
+    backgreound-color: white;
+    border-color:white;
+    border-radius:15px;
+    min-radius: 15px;
+    min-width: 100px;
+    font-weight: bold;
+    margin-top:10px;
+    color: #da2d07fa;
 }
